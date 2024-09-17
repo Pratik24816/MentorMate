@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="levender">#8692f7</color>
+    <color name="purple">#9868d3</color>
+    <color name="custom_button_color">#FF5733</color>
+    <color name="background_color">#363668</color>
+    <color name="background_color_50">#B3252547</color>
+    <color name="text_color_header">#fff</color>
+    <color name="text_color_description">#fff</color>
+    <color name="lightpurple">#f0e9fa</color>
+    <color name="darkpurple">#6735a4</color>
+    <color name="grey">#acacac</color>
+    <color name="background_color_light">#FFFFFF</color>
+    <color name="background_color_dark">#000000</color>
+    <color name="background_color_orange">#FFA500</color>
+    <color name="background_color_pink">#FFC0CB</color>
+    <color name="profile_border_color">#FF0000</color>
+
+
+</resources>
