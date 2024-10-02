@@ -5,11 +5,17 @@
     <uses-feature
         android:name="android.hardware.telephony"
         android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
 
     <application
         android:allowBackup="true"
@@ -21,8 +27,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mentormate"
         tools:targetApi="31">
+        <activity android:name=".GrowthActivity"/>
         <activity android:name=".MentorActivity" />
-        <activity android:name=".HomePageActivity"/>
+        <activity android:name=".HomePageActivity" />
         <activity android:name=".loginActivity" />
         <activity android:name=".SignupActivity" />
         <activity android:name=".MainActivity" />

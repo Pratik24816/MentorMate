@@ -62,17 +62,20 @@ public class MainActivity extends AppCompatActivity {
         // TabLayout setup
         TabLayout tabLayout = findViewById(R.id.tabLayout);
 
-        TabLayout.Tab tab1 = tabLayout.newTab().setIcon(R.drawable.calendar);
+        TabLayout.Tab tab1 = tabLayout.newTab().setIcon(R.drawable.lhome);
         tab1.setTag("tab1");
         tabLayout.addTab(tab1);
 
-        TabLayout.Tab tab2 = tabLayout.newTab().setIcon(R.drawable.increase);
+        TabLayout.Tab tab2 = tabLayout.newTab().setIcon(R.drawable.lmentor);
         tab2.setTag("tab2");
         tabLayout.addTab(tab2);
 
-        TabLayout.Tab tab3 = tabLayout.newTab().setIcon(R.drawable.medal);
+        TabLayout.Tab tab3 = tabLayout.newTab().setIcon(R.drawable.lsetting);
         tab3.setTag("tab3");
         tabLayout.addTab(tab3);
+
+        // Set the third tab (MainActivity) as selected by default
+        tabLayout.selectTab(tab3);
 
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
@@ -86,8 +89,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent2 = new Intent(MainActivity.this, MentorActivity.class);
                     startActivity(intent2);
                 } else if ("tab3".equals(tag)) {
-                    Intent intent3 = new Intent(MainActivity.this, MainActivity.class);
-                    startActivity(intent3);
+                    // Current tab is MainActivity, no need to start a new activity
                 }
             }
 

@@ -16,7 +16,7 @@ import android.content.pm.PackageManager;
 
 import com.google.android.material.tabs.TabLayout;
 
-public class MentorActivity extends AppCompatActivity {
+public class GrowthActivity extends AppCompatActivity {
 
     private static final int REQUEST_CALL_PERMISSION = 1;
     private String phoneNumber = "+916355761863"; // Example phone number in international format
@@ -24,7 +24,7 @@ public class MentorActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mentor);  // Ensure your layout file name is correct
+        setContentView(R.layout.activity_growth);  // Ensure your layout file name is correct
 
         AppCompatButton connectButton1 = findViewById(R.id.connectButton);
         Button emailButton1 = findViewById(R.id.emailButton);
@@ -38,8 +38,8 @@ public class MentorActivity extends AppCompatActivity {
 
     private void initiateVideoCall(String phoneNumber) {
         try {
-            if (ContextCompat.checkSelfPermission(MentorActivity.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-                ActivityCompat.requestPermissions(MentorActivity.this, new String[]{Manifest.permission.CALL_PHONE}, REQUEST_CALL_PERMISSION);
+            if (ContextCompat.checkSelfPermission(GrowthActivity.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(GrowthActivity.this, new String[]{Manifest.permission.CALL_PHONE}, REQUEST_CALL_PERMISSION);
             } else {
                 // Attempt to initiate a video call using the tel URI scheme with the phone number
                 // This may trigger carrier-level video calling on supported devices/networks.
@@ -94,11 +94,11 @@ public class MentorActivity extends AppCompatActivity {
             public void onTabSelected(TabLayout.Tab tab) {
                 String tag = (String) tab.getTag();
                 if ("tab1".equals(tag)) {
-                    startActivity(new Intent(MentorActivity.this, HomePageActivity.class)); // Replace with your actual activity
+                    startActivity(new Intent(GrowthActivity.this, HomePageActivity.class)); // Replace with your actual activity
                 } else if ("tab2".equals(tag)) {
                     // Current tab is MentorActivity, no need to start a new activity
                 } else if ("tab3".equals(tag)) {
-                    startActivity(new Intent(MentorActivity.this, MainActivity.class)); // Replace with your actual activity
+                    startActivity(new Intent(GrowthActivity.this, MainActivity.class)); // Replace with your actual activity
                 }
             }
 

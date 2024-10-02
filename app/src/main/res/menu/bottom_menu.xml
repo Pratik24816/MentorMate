@@ -1,19 +1,10 @@
-<!-- res/menu/bottom_nav_menu.xml -->
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/nav_home"
-        android:icon="@drawable/home"
-        android:title="Home" />
-    <item
-        android:id="@+id/nav_mentor"
-        android:icon="@drawable/mentor"
-        android:title="Mentor" />
-    <item
-        android:id="@+id/nav_videos"
-        android:icon="@drawable/mvideo"
-        android:title="Videos" />
-    <item
         android:id="@+id/nav_profile"
-        android:icon="@drawable/profile"
-        android:title="Profile" />
+        android:title="Profile"
+        android:icon="@drawable/profile" />
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logout"
+        android:icon="@drawable/lock" />
 </menu>
